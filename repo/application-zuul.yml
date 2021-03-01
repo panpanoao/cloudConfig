@@ -1,0 +1,11 @@
+zuul:
+  routes:
+    api-a:
+      path: /aa/**
+      serviceId: service-ribbon
+    api-b:
+      path: /bb/**
+      serviceId: service-feign
+    api-c:
+      path: /cc/**
+      serviceId: service-hi
