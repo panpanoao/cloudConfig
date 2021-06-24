@@ -33,22 +33,6 @@ mybatis-plus:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 #----------------------------seata----------------------------
-seata:
-  enabled: true
-  application-id: seata_server
-  tx-service-group: default
-  enable-auto-data-source-proxy: true
-  use-jdk-proxy: false
-  service:
-    vgroup-mapping:
-      default: seata_server
-    enable-degrade: false
-    disable-global-transaction: false
-  registry:
-    type: eureka
-    eureka:
-      weight: 1
-      service-url: http://127.0.0.1:8761/eureka/
 
 eureka:
   client:
